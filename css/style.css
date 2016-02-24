@@ -468,3 +468,154 @@ body.inner-page{
 .inner-page-title{
     margin-bottom: 50px;
 }
+.inner-page-title h1{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+}
+.inner-page-title .breadcrumbs{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.breadcrumbs li{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
+}
+.breadcrumbs a{
+    vertical-align: top;
+    text-decoration: none;
+    color: #000;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs li::after{
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #000;
+    transform: rotate(45deg);    
+}    
+.breadcrumbs .current a{
+  color: #aba9a7;
+    text-decoration: none;
+}
+.breadcrumbs .current::after {
+  display: none;
+}
+.inner-content{
+    margin-bottom: 80px;
+}
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  
+  font-size: 24px;
+  line-height: 30px;
+}
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+  border: 2px solid black;
+}
+.big-heading{
+    margin-top: 55px;
+    margin-bottom: 65px;
+    text-align: center;
+}    
+.big-heading h2 {
+    position: relative;
+    z-index:2;
+    display: inline;
+    margin: 0;
+    padding: 0 25px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: #faf7f4 url("../img/bg/index-content-bg.jpg") repeat;
+}
+.big-heading:after {
+    content: "";
+    position: relative;
+    top: -25px;
+    z-index: 1;
+    display: block;
+    border-bottom: 2px solid black;
+}
+.inner-content .list-1{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.list-1 li{
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+.list-1 li::before{
+    position: absolute;
+    left: 0;
+    top: 8px;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #000;
+    transform: rotate(45deg);    
+}
+.price-table{
+    width: 100%;
+}
+.price-table td{
+    width: 50%;
+}
+.price-table td:last-child {
+  text-align: center;
+}
+.short-text {
+  padding-right: 80px;
+}
+.inner-content-columns {
+    margin: 60px 0;
+}
+
+.inner-content-column-left,
+.inner-content-column-right {
+  width: 460px;
+}
+
+.inner-content-column-left {
+  float: left;
+}
+
+.inner-content-column-right {
+  float: right;
+}
+
+.inner-content-column-left *:first-child,
+.inner-content-column-right *:first-child {
+  margin-top: 0;
+}
+.inner-content-column-left *:last-child,
+.inner-content-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+
+
