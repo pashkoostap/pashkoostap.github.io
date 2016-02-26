@@ -280,8 +280,8 @@ body{
 }
 .main-footer{
     margin-top: 60px;
-    padding-bottom: 60px;
-    padding-top: 60px;
+    padding-bottom: 55px;
+    padding-top: 55px;
     background: #212121 url("../img/index-footer-bg.jpg") no-repeat center top;
     color: #fff;
 }
@@ -631,6 +631,7 @@ body.inner-page{
     margin: 0;
     padding: 0;
     margin-bottom: 30px;
+    margin-top: -13px;
 }
 .catalog-filters .brands,
 .catalog-filters .items-groups{
@@ -720,8 +721,9 @@ body.inner-page{
     margin: 0;
     padding: 0;
     font-size: 0;
+    margin-bottom: 45px;
 }
-.catalog-item{
+.catalog-item-page{
     display: inline-block;
     position: relative;
     width: 220px;
@@ -731,59 +733,95 @@ body.inner-page{
     margin-right: 20px;
     margin-bottom: 20px;
     background: #fff;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 }
-.catalog-item:nth-child(3n){
+.catalog-item-page:nth-child(3n){
     margin-right: 0;
 }
-.catalog-item .item-brand-name{
+.item-brand-name,
+.item-name{
+    display: block;
     vertical-align: top;
     font-size: 14px;
     line-height: 18px;
     margin: 0;
+    text-decoration: none;
+    color: #000;
+}
+.item-brand-name:hover,
+.item-name:hover{
+    text-decoration: underline;
+}
+.item-brand-name{
     padding: 5px 15px 0px 15px;
 }
-.catalog-item .item-name{
-    vertical-align: top;
-    font-size: 14px;
-    line-height: 18px;
+.item-name{
     text-transform: none;
-    margin: 0;
     padding: 0px 15px 10px 15px;
 }
-.catalog-item{
-    position: relative;
-}
-
-
-.buy-item{
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    margin: 0;
-    padding: 0;
-    margin: 0;
-    width: 80px;
-    height: 40px;
-}
+.buy-item,
 .price{
     position: absolute;
-    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+.price{
     left: 15px;
     bottom: 15px;
-    margin: 0;
-    padding-top: 10px;
     width: 110px;
-    height: 30px;
-    background: #ccc;
+    height: 32px;
+    padding-top: 13px;
+    background: #e5e5e5;
     vertical-align: top;
     text-align: center;
     line-height: 20px;
+    font-size: 14px;
 }
-
-
-
-
-
+.buy-item{
+    right: 15px;
+    bottom: 15px;
+    width: 80px;
+    height: 45px;
+}
+.catalog-items-paginator{
+    margin: 0;
+    padding: 0;
+    
+}
+.paginator-pages{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.paginator-pages li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.paginator-pages a{
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    vertical-align: top;
+    text-align: center;
+    color: #fff;
+    padding: 13px 20px;
+    background: #000;
+    margin: 0;
+    margin-right: 7px;
+}
+.paginator-pages a:hover,
+.paginator-pages a:active{
+    background: #663d15; 
+}
+.current-page a{
+    background: #fff;
+    color: #000;
+}
+.current-page a:hover,
+.current-pages a:active{
+    background: #fff;
+}
 
 
 
