@@ -102,8 +102,8 @@ body{
     left: 20px;
     width: 18px;
     height: 18px;
-    background: transparent url("../img/social-btn.png") no-repeat;    
-    background-position: -10px -176px;
+    background: transparent url("../img/spritesheet.png") no-repeat;    
+    background-position: -10px -208px;
 }
 .login:hover::before{
     opacity: .3;
@@ -284,26 +284,24 @@ body{
     padding-top: 55px;
     background: #212121 url("../img/index-footer-bg.jpg") no-repeat center top;
     color: #fff;
+    text-align: center;
 }
 .footer-contacts{
     float: left;
     max-width: 320px;
-    margin-right: 80px;
+    margin-right: 105px;
     text-align: left;
+    
 }
-.footer-contacts a{
-    color: #fff;
-}
-.footer-contacts a:hover{
-    text-decoration: none;
-}
+
 .footer-social{
     float: left;
     text-align: center;
 }
 .footer-social p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
 }
 .social-btn{
     display: inline-block;
@@ -313,13 +311,13 @@ body{
     margin: 0px 2px;
     font-size: 0;
     text-decoration: none;
-    background: transparent url("../img/social-btn.png") no-repeat center; 
+    background: transparent url("../img/spritesheet.png") no-repeat center; 
 }
 .social-btn:hover {
     background-color: #fff;
 }
 .social-btn-vk {
-  background-position: -2px -272px;
+  background-position: -2px -413px;
 }
 .social-btn-fb {
   background-position: 6px -1px;
@@ -328,7 +326,7 @@ body{
   background-position: 1px -84px;
 }
 .social-btn-vk:hover {
-  background-position: -2px -308px;
+  background-position: -2px -449px;
 }
 .social-btn-fb:hover {
   background-position: 6px -43px;
@@ -342,7 +340,7 @@ body{
 }
 .footer-copyright p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   text-align: center;
 }
@@ -354,6 +352,9 @@ body{
   color: #000;
   background: #fff;
 }
+
+
+
 /* Форма входу index.html*/
 .modal-content{
     position: absolute;
@@ -374,7 +375,8 @@ body{
     height: 40px;
     font-size: 0;
     cursor: pointer;
-    background: url("../img/icon/login-form-close.png") no-repeat center;   
+    background: url("../img/spritesheet.png") no-repeat;
+    background-position: -1px -236px;
 }
 .modal-content h2{
     margin: 0;
@@ -411,10 +413,10 @@ body{
     border: 2px solid #663d15;
 }
 .login-form input.icon-user{
-    background:url("../img/social-btn.png") no-repeat 100% -235px;
+    background:url("../img/spritesheet.png") no-repeat 100% -377px;
 }
 .login-form input.icon-password{
-    background:url("../img/social-btn.png") no-repeat 100% -200px;
+    background:url("../img/spritesheet.png") no-repeat 100% -312px;
 }
 .login-form .restore{
     float: right;
@@ -448,14 +450,46 @@ body{
     border: 2px solid #000;
 }
 .login-form input[type="checkbox"]:checked + label::before{
-    background: url("../img/icon/icon-checked.png") no-repeat 50% 50%;   
+    background: url("../img/spritesheet.png") no-repeat;
+    background-position: -7px -173px;
 }
 .login-form input[type="checkbox"]{
     display: none;
 }
-/*modal-content off*/
+/*modal-content close*/
 .modal-content{
     display: none;
+}
+/*modal-content open*/
+.modal-content-show{
+    display: block;
+}
+/*modal-map    */
+.modal-map{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 766px;
+    height: 561px;
+    border: 7px solid white;
+    background: #e9e5dc;
+    margin-left: -390px;
+    margin-top: -360px;
+}
+.modal-map-show{
+    display: block;
+}
+.modal-map-close{
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    cursor: pointer;
+    background: url("../img/spritesheet.png") no-repeat;
+    background-position: -1px -276px;
 }
 /*price.html*/
 body.inner-page{
@@ -669,7 +703,8 @@ body.inner-page{
     border: 2px solid #000;
 }
 .brands input[type="checkbox"]:checked + label::before{
-    background: url("../img/icon/icon-checked.png") no-repeat 50% 50%;   
+    background: url("../img/spritesheet.png") no-repeat;
+    background-position: -7px -173px;
 }
 .brands input[type="checkbox"]{
     display: none;
@@ -702,7 +737,8 @@ body.inner-page{
     border-radius: 50%;
 }
 .items-groups input[type="radio"]:checked + label::before{
-   background: url("../img/icon/radio-checked.png") no-repeat 50% 50%;   
+   background: url("../img/spritesheet.png") no-repeat;
+background-position: -5px -358px; 
 }
 .items-groups input[type="radio"]{
     display: none;
