@@ -28,7 +28,6 @@ body{
     height: 46px;
     margin-top: 13px;
     margin-left: 35px;
-    
 }
 .main-header .logo{
     float: left;
@@ -161,9 +160,9 @@ body{
     text-transform: uppercase;
     font-size: 12px;
     line-height: 18px;
-    transform: rotate(-90deg);
     cursor: pointer;
-    
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
 }
 h3{
     color: #b2a492;
@@ -309,6 +308,7 @@ th:nth-child(4){
     border: none;
     outline: none;
     color: #fff;
+    font-style: italic;
 }
 .block-registration input[type="email"]{
     margin-bottom: 10px;
@@ -339,7 +339,6 @@ input[type="submit"]{
     color:#fff;
     font-style: italic;
 }
-
 .select-list select{
     font-size: 14px;
     margin-bottom: 15px;
@@ -354,28 +353,6 @@ input[type="submit"]{
     margin-bottom: 10px;
     font-style: italic;
 }
-/* Оформлення стрілки
-.select-list{
-    width: 315px;
-    overflow: hidden;
-    position: relative;
-    overflow: hidden;
-}
-
-.select-list::after{
-    content: '';
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    right: 0px;
-    top: 0px;
-    background: 
-        url('../img/icon/icon-select-arrow.png') no-repeat,
-        rgba(255, 255, 255, 0.50) repeat;
-    background-position: 
-        10px 15px;
-}
-*/
 form p{
     float: left;
     font-size: 14px;

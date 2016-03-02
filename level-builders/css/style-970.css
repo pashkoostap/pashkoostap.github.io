@@ -189,8 +189,10 @@ body{
     text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
-    transform: rotate(-90deg);
     cursor: pointer;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    
 }
 h3{
     color: #b2a492;
@@ -329,6 +331,7 @@ th:nth-child(4){
     border: none;
     outline: none;
     color: #fff;
+    font-style: italic;
 }
 input[type="email"]{
     margin-bottom: 20px;
@@ -618,6 +621,7 @@ form p{
     color: #989898;
     font-style: italic;
     max-width: 180px;
+    font-style: italic;
 }
 .modal-content-form input[type="submit"]{
     width: 125px;

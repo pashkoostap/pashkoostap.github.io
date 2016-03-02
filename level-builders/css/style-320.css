@@ -47,14 +47,12 @@ body{
 .main-navigation{
     display: none; 
 }
-
 .main-header .change-lan{
     display: none;
 }
 .main-header .phone{
     display: none;
 }
-
 .block-1{
     position: relative;
     width: 320px;
@@ -168,7 +166,6 @@ h3{
     padding: 0;
 }
 .left-column{
-    
     width: 320px;
 }
 .left-column img{
@@ -189,7 +186,6 @@ h3{
 .right-column a{
     font-size: 11px;
     line-height: 15px;
-    
     margin-left: 85px;
     text-decoration: none;
     color: #000;
@@ -237,40 +233,7 @@ h3{
 }
 .block-table{
     display: none;
-    min-height: 330px;
-    background: #ededed;
-    margin: 0;
-    padding: 0px 29px 48px 29px;
-}
-.block-table table{
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-    border: 1px solid #000;
-    color: #b2a492;
-    font-size: 14px;
-}
-th, tr, td{
-    border: 1px solid #000;
-}
-th{
-    font-size: 16px;
-    font-weight: normal;
-    height: 40px;
-}
-tr{
-    height: 27px;
-}
-th:nth-child(1){
-    width: 172px;
-}
-th:nth-child(2),
-th:nth-child(3),
-th:nth-child(5){
-    width: 78px;
-}
-th:nth-child(4){
-    width: 113px;
+    
 }
 .block-registration{
     width: 320px;
@@ -297,6 +260,7 @@ th:nth-child(4){
     border: none;
     outline: none;
     color: #fff;
+    font-style: italic;
 }
 .block-registration input[type="email"]{
     margin-bottom: 15px;
@@ -327,7 +291,6 @@ input[type="submit"]{
     color:#fff;
     font-style: italic;
 }
-
 .select-list select{
     font-size: 14px;
     margin-bottom: 15px;
@@ -342,28 +305,6 @@ input[type="submit"]{
     margin-bottom: 15px;
     font-style: italic;
 }
-/* Оформлення стрілки
-.select-list{
-    width: 315px;
-    overflow: hidden;
-    position: relative;
-    overflow: hidden;
-}
-
-.select-list::after{
-    content: '';
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    right: 0px;
-    top: 0px;
-    background: 
-        url('../img/icon/icon-select-arrow.png') no-repeat,
-        rgba(255, 255, 255, 0.50) repeat;
-    background-position: 
-        10px 15px;
-}
-*/
 form p{
     float: left;
     font-size: 14px;
@@ -409,7 +350,6 @@ form p{
 .input-radio-group input[type="radio"]{
     display: none;
 }
-
 .input-checkbox-group input[type="checkbox"] + label{
     position: relative;
     display: inline-block;
@@ -450,57 +390,24 @@ form p{
 .main-footer h3{
     color: #fff;
     padding-bottom: 20px;
-    
 }
 .main-footer h4{
     display: none;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 10px;
-    padding-left: 35px;
-    position: relative;
-    margin-bottom: 10px;
 }
 .main-footer h4::before{
     display: none;
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 26px;
-    height: 0;
-    border: 1px solid #fff;
 }
 .container .contact{
     display: none;
-    min-width: 125px;
-    float: left;
-    margin-right: 40px;
-    margin-left: 125px;
-    vertical-align: top;
 }
 .container .address{
     display: none;
-    min-width: 180px;
-    float: left;
-    margin-right: 40px;
-    vertical-align: top;
 }
 .container .press{
     display: none;
-    min-width: 125px;
-    float: left;
-    vertical-align: top;
 }
 .container .footer-copyright{
     display: none;
-    float: left;
-    width: 750px;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 8px 0;
-    background: #726b63;
 }
 .container .contact-style-320{
     display: block;
@@ -543,7 +450,9 @@ form p{
     background: #726b63;
     position: relative;
 }
-
+.style-320{
+    display: inline;
+}
 /* Модальне вікно */
 .modal-content{
     position: fixed;
@@ -555,11 +464,11 @@ form p{
 }
 .modal-content-form{
     position: absolute;
-    width: 300px;
-    min-height: 315px;
-    top: 95px;
+    width: 125px;
+    min-height: 135px;
+    top: 40px;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -63px;
     background: #e1e1e1;
 }
 .modal-close{
@@ -567,24 +476,26 @@ form p{
     font-size: 0;
     width: 14px;
     height: 12px;
-    top: 14px;
-    right: 14px;
+    top: 2px;
+    right: 2px;
     background: url('../img/spritesheet.png') no-repeat -10px -394px;
     cursor: pointer;
+    transform: scale(0.5);
 }
 .modal-content-form p{
-    font-size: 14px;
+    
+    font-size: 6px;
     font-weight: bold;
-    line-height: 42px;
+    line-height: 10px;
     color: #b2a492;
     text-transform: uppercase;
     text-align: center;
     vertical-align: top;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 .modal-content-form form{
-    width: 185px;
+    width: 80px;
     margin: 0 auto;
 }
 .modal-content-form input[type="text"],
@@ -592,29 +503,32 @@ form p{
 .modal-content-form input[type="email"],
 .modal-content-form textarea{
     font-family: Arial;
-    font-size: 12px;
-    margin-bottom: 7px;
-    padding: 7px 10px;
-    width: 165px;
+    font-size: 5px;
+    margin: 0px;
+    padding: 3px 5px;
+    width: 70px;
     background: #fff;
     border: none;
     outline: none;
     color: #989898;
     font-style: italic;
-    max-width: 165px;
+    max-width: 70px;
+}
+.modal-content-form input[type="email"]{
+    margin-bottom: 7px;
 }
 .modal-content-form input[type="submit"]{
-    width: 115px;
-    font-size: 12px;
+    width: 50px;
+    font-size: 5px;
     font-weight: bold;
     background: #b2a492;
     color: #fff;
     outline: none;
     border: none;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-left: 35px;
-    
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 5px 0px;
 }
 .modal-content-form ::-webkit-input-placeholder {
     color:#989898; 
@@ -632,36 +546,38 @@ form p{
     color:#989898;
     font-style: italic;
 }
-
 .modal-content-form input[type="checkbox"] + label{
     position: relative;
     display: inline-block;
-    padding-left: 20px;
+    padding-left: 15px;
     cursor: pointer;
     vertical-align: top;    
     color: #b2a492;
-    font-size: 10px;
+    font-size: 4px;
     text-transform: lowercase;
-    margin-left: 17px;
-    margin-bottom: 15px;
+    margin-left: 5px;
 }
 .modal-content-form input[type="checkbox"] + label::before{
     content: '';
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -4px;
     width: 14px;
     height: 14px;
     background: url('../img/spritesheet.png') no-repeat -10px -361px;
+    transform: scale(0.4);
+    margin-bottom: 0px;
 }
 .modal-content-form input[type="checkbox"]:checked + label::before{
     content: '';
     position: absolute;
     left: 0px;
-    top: 0px;
+    top: -4px;
     width: 14px;
     height: 14px;
     background: url('../img/spritesheet.png') no-repeat -10px -328px;
+    transform: scale(0.4);
+    margin-bottom: 0px;
 }
 .modal-content-form input[type="checkbox"]{
     display: none;
