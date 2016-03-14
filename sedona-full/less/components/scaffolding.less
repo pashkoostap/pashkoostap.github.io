@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: @font-family;
+  font-size: @font-size;
+  line-height: @line-height; 
+  text-transform: uppercase;
+  color: @black;
+  font-weight: normal;
+  
+}
+.page-wrap {
+  margin: 0 auto;
+    
+  @media(min-width: 1200px) {
+    max-width: 1200px;
+  }
+  
+  @media(min-width: 768px) and (max-width: 1200px) {
+    max-width: 1200px;
+    min-width: 768px;
+  }
+  
+  @media(max-width: 768px) {
+    max-width: 768px;
+    min-width: 320px;
+  }
+    
+}
