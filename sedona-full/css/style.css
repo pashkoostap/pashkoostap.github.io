@@ -1,5 +1,114 @@
+.intro {
+  font-size: 0;
+  min-height: 725px;
+  background-image: url('../img/bg-intro-1200.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /*  &__poster::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: url(/img/bg-intro-shape-1200.png) center no-repeat;
+  }
+ */
+}
+.intro__poster {
+  padding-top: 75px;
+  position: relative;
+}
+.intro__poster__welcome {
+  width: 256px;
+  height: 86px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background: url('../img/logo-intro-welcome.png') no-repeat center;
+}
+.intro__poster__sedona {
+  width: 458px;
+  height: 78px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  background: url('../img/logo-intro-sedona.png') no-repeat center;
+}
+.intro__poster__slogan {
+  width: 295px;
+  height: 80px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background: url('../img/logo-intro-grand-canyon.png') no-repeat center;
+}
+.intro__about {
+  min-height: 155px;
+  padding-top: 61px;
+  background: #ffffff;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+}
+.intro__about__header {
+  font-size: 21px;
+  vertical-align: top;
+  font-weight: bold;
+  margin-bottom: 35px;
+  width: 440px;
+  margin: 0 auto;
+}
+.intro__about__reason {
+  font-size: 14px;
+  vertical-align: top;
+}
+@media (max-width: 768px) {
+  .intro {
+    min-height: 615px;
+  }
+  .intro__poster {
+    padding-top: 47px;
+  }
+  .intro__poster__welcome {
+    width: 196px;
+    height: 66px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    background: url('../img/logo-intro-welcome.png') no-repeat center;
+    background-size: 100%;
+  }
+  .intro__poster__sedona {
+    width: 280px;
+    height: 48px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    background: url('../img/logo-intro-sedona.png') no-repeat center;
+    background-size: 100%;
+  }
+  .intro__poster__slogan {
+    width: 197px;
+    height: 54px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: url('../img/logo-intro-grand-canyon.png') no-repeat center;
+    background-size: 100%;
+  }
+  .intro__about {
+    min-height: 185px;
+    padding-top: 38px;
+  }
+  .intro__about__header {
+    font-size: 18px;
+    margin-bottom: 28px;
+    width: 260px;
+  }
+  .intro__about__reason {
+    margin: 0 auto;
+    width: 260px;
+    margin-bottom: 28px;
+  }
+}
 .main-header {
   background-color: #ffffff;
+  min-height: 56px;
 }
 .main-header .main-nav__logo,
 .main-header .main-nav__mobile--logo {
@@ -7,6 +116,7 @@
   top: 0;
   left: 50%;
   margin-left: -69px;
+  z-index: 100;
 }
 .main-nav__list {
   margin: 0;
@@ -20,7 +130,7 @@
 }
 .main-nav__list li a {
   text-align: center;
-  padding: 14px 0;
+  padding: 15px 0;
   display: block;
   font-size: 14px;
   text-decoration: none;
@@ -28,45 +138,23 @@
   font-weight: bold;
   line-height: 26px;
 }
-@media (min-width: 768px) {
-  .main-nav__list li:nth-child(2) {
-    margin-right: 20%;
-  }
-  .main-nav__list a:hover {
-    color: #81b3d2;
-  }
-  .main-nav__list a:active {
-    opacity: 0.3;
-  }
-  .main-nav .main-nav__list--active-item a {
-    color: #766357;
-  }
-  .main-nav .main-nav__list--active-item a:hover {
-    color: #604e43;
-  }
-  .main-nav .main-nav__list--active-item a:active {
-    opacity: 0.3;
-  }
+.main-nav__list li:nth-child(2) {
+  margin-right: 20%;
 }
-@media (min-width: 768px) and (max-width: 1200px) {
-  .main-nav__list li:nth-child(2) {
-    margin-right: 20%;
-  }
-  .main-nav__list a:hover {
-    color: #81b3d2;
-  }
-  .main-nav__list a:active {
-    opacity: 0.3;
-  }
-  .main-nav .main-nav__list--active-item a {
-    color: #766357;
-  }
-  .main-nav .main-nav__list--active-item a:hover {
-    color: #604e43;
-  }
-  .main-nav .main-nav__list--active-item a:active {
-    opacity: 0.3;
-  }
+.main-nav__list a:hover {
+  color: #81b3d2;
+}
+.main-nav__list a:active {
+  opacity: 0.3;
+}
+.main-nav .main-nav__list--active-item a {
+  color: #766357;
+}
+.main-nav .main-nav__list--active-item a:hover {
+  color: #604e43;
+}
+.main-nav .main-nav__list--active-item a:active {
+  opacity: 0.3;
 }
 @media (max-width: 768px) {
   .main-nav {
@@ -85,7 +173,7 @@
     right: 20px;
     width: 23px;
     height: 22px;
-    background: url(/img/icon/2-mobile-menu-close.png) no-repeat center;
+    background: url(../img/icon/2-mobile-menu-close.png) no-repeat center;
     z-index: 10;
   }
   .main-nav__mobile--close--show {
@@ -113,12 +201,19 @@
   .main-nav__list li:last-child {
     border-bottom: none;
   }
-  .main-nav__list a:hover {
+  .main-nav__list a:hover,
+  .main-nav .main-nav__list--active-item a:hover {
     background-color: #669ec0;
+    color: #ffffff;
   }
-  .main-nav__list a:active {
+  .main-nav__list a:active,
+  .main-nav .main-nav__list--active-item a:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+  }
+  .main-nav .main-nav__list--active-item a {
+    color: #ffffff;
   }
   .main-nav__mobile {
     min-height: 56px;
@@ -130,7 +225,7 @@
     right: 20px;
     width: 23px;
     height: 22px;
-    background: url(/img/icon/1-mobile-menu-open.png) no-repeat center;
+    background: url(../img/icon/1-mobile-menu-open.png) no-repeat center;
   }
 }
 body {

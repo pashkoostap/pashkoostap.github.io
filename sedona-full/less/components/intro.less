@@ -1,0 +1,110 @@
+.intro {
+  font-size: 0;
+  min-height: 725px;
+  
+  background-image: url('../img/bg-intro-1200.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  
+  &__poster {
+    padding-top: 75px;
+    position: relative;
+    .mixing--poster (@width, @height, @margin-bottom) {
+      width: @width;
+      height: @height;
+      margin: 0 auto;
+      margin-bottom: @margin-bottom;
+    }
+    &__welcome {
+      .mixing--poster (256px, 86px, 50px);
+      background: url('../img/logo-intro-welcome.png') no-repeat center;
+    }
+    &__sedona {
+      .mixing--poster (458px, 78px, 60px);
+      background: url('../img/logo-intro-sedona.png') no-repeat center;
+    }
+    &__slogan {
+      .mixing--poster (295px, 80px, 80px);
+      background: url('../img/logo-intro-grand-canyon.png') no-repeat center;
+    }
+  }
+  
+/*  &__poster::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+    background: url(/img/bg-intro-shape-1200.png) center no-repeat;
+  }
+ */ 
+  &__about {
+    min-height: 155px;
+    padding-top: 61px;
+    background: @white;
+    line-height: @line-height;
+    text-align: center;
+    color: @black;
+    &__header {
+      font-size: @font-size--header;
+      vertical-align: top;
+      font-weight: bold;
+      margin-bottom: 35px;
+      width: 440px;
+      margin: 0 auto;
+    }
+    &__reason {
+      font-size: @font-size;
+      vertical-align: top;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .intro {
+    min-height: 615px;
+
+    &__poster {
+      padding-top: 47px;
+      .mixing--poster (@width, @height, @margin-bottom) {
+        width: @width;
+        height: @height;
+        margin: 0 auto;
+        margin-bottom: @margin-bottom;
+      }
+      &__welcome {
+        .mixing--poster (196px, 66px, 70px);
+        background: url('../img/logo-intro-welcome.png') no-repeat center;
+        background-size: 100%;
+
+      }
+      &__sedona {
+        .mixing--poster (280px, 48px, 70px);
+        background: url('../img/logo-intro-sedona.png') no-repeat center;
+        background-size: 100%;
+      }
+      &__slogan {
+        .mixing--poster (197px, 54px, 50px);
+        background: url('../img/logo-intro-grand-canyon.png') no-repeat center;
+        background-size: 100%;
+      }
+    }
+
+    &__about {
+      min-height: 185px;
+      padding-top: 38px;
+
+      &__header {
+        font-size: @font-size--header--small;
+        margin-bottom: 28px;
+        width: 260px;
+      }
+      &__reason {
+        margin: 0 auto;
+        width: 260px;
+        margin-bottom: 28px;
+      }
+    }
+  }    
+}

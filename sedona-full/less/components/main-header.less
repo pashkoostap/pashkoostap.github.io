@@ -1,5 +1,6 @@
 .main-header {
   background-color: @white;
+  min-height: 56px;
   
   .main-nav__logo,
   .main-nav__mobile--logo {
@@ -7,6 +8,7 @@
     top: 0;
     left: 50%;
     margin-left: -69px;
+    z-index: 100;
   }
   
 }
@@ -25,7 +27,7 @@
     
     a {
       text-align: center;
-      padding: 14px 0;
+      padding: 15px 0;
       display: block;
       font-size: @font-size;
       text-decoration: none;
@@ -36,12 +38,7 @@
     
   }
   
-}
-
-
-@media(min-width: 768px) {
-  .main-nav {
-    &__list li:nth-child(2) {
+  &__list li:nth-child(2) {
       margin-right: 20%;
     }
     
@@ -52,7 +49,7 @@
     &__list a:active {
       opacity: 0.3;
     }
-    
+  
     .main-nav__list--active-item a {
       color: @brown;
     }
@@ -64,39 +61,9 @@
     .main-nav__list--active-item a:active {
       opacity: 0.3;
     }
-    
-  }
-}
   
-@media(min-width: 768px) and (max-width: 1200px) {
-  .main-nav {
-    &__list li:nth-child(2) {
-      margin-right: 20%;
-    }
-    
-    &__list a:hover {
-      color: @blue;
-    }
-    
-    &__list a:active {
-      opacity: 0.3;
-    }
-    
-    .main-nav__list--active-item a {
-      color: @brown;
-    }
-    
-    .main-nav__list--active-item a:hover {
-      color: @dark--brown;
-    }
-    
-    .main-nav__list--active-item a:active {
-      opacity: 0.3;
-    }
-    
-  }
 }
-  
+
 @media(max-width: 768px) {
   
     .main-nav {
@@ -117,7 +84,7 @@
         right: 20px;
         width: 23px;
         height: 22px;
-        background: url(/img/icon/2-mobile-menu-close.png) no-repeat center;  
+        background: url(../img/icon/2-mobile-menu-close.png) no-repeat center;  
         z-index: 10;
       }
       
@@ -153,15 +120,23 @@
         border-bottom: none;
       }
       
-      &__list a:hover {
+      &__list a:hover,
+      .main-nav__list--active-item a:hover {
         background-color: @blue--hover;
+        color: @white;
       }
       
-      &__list a:active {
+      &__list a:active,
+      .main-nav__list--active-item a:active {
         background-color: @blue--down;
         color: rgba(255,255,255,0.3);
+        opacity: 1;
       }
       
+      .main-nav__list--active-item a {
+        color: @white;
+      }
+
       &__mobile {
         min-height: 56px;
         position: relative;
@@ -172,7 +147,7 @@
           right: 20px;
           width: 23px;
           height: 22px;
-          background: url(/img/icon/1-mobile-menu-open.png) no-repeat center;
+          background: url(../img/icon/1-mobile-menu-open.png) no-repeat center;
         }
       }
     }
