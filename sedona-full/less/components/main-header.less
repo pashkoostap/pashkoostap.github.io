@@ -86,6 +86,7 @@
         height: 22px;
         background: url(../img/icon/2-mobile-menu-close.png) no-repeat center;  
         z-index: 10;
+        cursor: pointer;
       }
       
       &__mobile--close--show {
@@ -120,6 +121,10 @@
         border-bottom: none;
       }
       
+      &__list li:nth-child(2) {
+      margin-right: 0%;
+      }
+      
       &__list a:hover,
       .main-nav__list--active-item a:hover {
         background-color: @blue--hover;
@@ -148,6 +153,7 @@
           width: 23px;
           height: 22px;
           background: url(../img/icon/1-mobile-menu-open.png) no-repeat center;
+          cursor: pointer;
         }
       }
     }

@@ -1,0 +1,216 @@
+.main-content {
+  font-size: 0;
+  color: @black;
+  vertical-align: top;
+  
+  .reason__header,
+  .reason__text,
+  .reason__number {
+    font-size: @font-size--header;
+    line-height: @line-height;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .reason__header {
+    margin-bottom: 12px;
+  }
+  .reason__number {
+    margin-bottom: 20px;
+  }  
+  .reason__text {
+    margin-bottom: 0;
+  }
+  .reason__text,
+  .reason__number {
+    font-size: @font-size;
+    padding: 0 70px;
+  }
+    
+  &__reason__description {
+    vertical-align: top;
+    padding: 0;
+    padding-top: 45px;
+    background: @light--grey;
+    min-height: 210px;
+  }
+  
+  &__reason-1 {
+    .main-content__reason__description {
+        width: @column-1;
+        display: inline-block;
+        color: @white;
+        background-color: @blue;
+    }
+    &__image {
+        vertical-align: top;
+        width: @column-2;
+        height: 255px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;  
+        background-image: url(/img/bg-main-reason-1.jpg);
+    }
+    .reason__image {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto;
+      margin-top: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    &__house,
+    &__food,
+    &__souvenir {
+      width: @column-1;
+      display: inline-block;
+      vertical-align: top;
+      min-height: 330px;
+    }
+  }
+  
+  
+  &__reason-2 {
+     .main-content__reason__description {
+        width: @column-1;
+        display: inline-block;
+        color: @white;
+        background-color: @blue;
+    }
+    &__image {
+        vertical-align: top;
+        width: @column-2;
+        height: 255px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;  
+        background-image: url(/img/bg-main-reason-2.jpg);
+    }
+  }
+  &__reason-3,
+  &__reason-4,
+  &__reason-5 {
+    width: @column-1;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1200px) {
+ .main-content {
+  .reason__text,
+  .reason__number {
+    padding: 0 45px;
+    } 
+  }
+}
+
+@media(max-width: 768px) {
+.main-content {
+  .reason__header,
+  .reason__text,
+  .reason__number {
+    font-size: @font-size--header--small;
+  }
+  
+  .reason__header {
+    margin-bottom: 12px;
+    
+  }
+  .reason__number {
+    margin-bottom: 10px;
+  }  
+  .reason__text,
+  .reason__number {
+    padding: 0 30px;
+    
+  }
+    
+  &__reason__description {
+    min-height: 150px;
+    padding-top: 40px;
+  }
+  
+  &__reason-1 {
+    .main-content__reason__description {
+        width: @column-3;
+    }
+    &__image {
+        vertical-align: top;
+        width: @column-3;
+        height: 255px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;  
+        background-image: url(/img/bg-main-reason-1.jpg);
+    }
+    .reason__image {
+      width: 40px;
+      height: 40px;
+      margin-left: 20px;
+      margin-top: 30px;
+      margin-right: 10px;
+      margin-bottom: 0;
+      display: inline-block;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      
+    }
+    &__house,
+    &__food,
+    &__souvenir {
+      width: @column-3;
+      display: inline-block;
+      vertical-align: top;
+      min-height: 50px;
+      
+      .reason__header {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 40px;
+        margin-bottom: 0;
+      }
+      .reason__text {
+        display: inline-block;
+        vertical-align: top;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        padding-left: 70px;
+        padding-right: 40px;
+      }
+    }
+  }
+  
+  
+  &__reason-2 {
+     .main-content__reason__description {
+        width: @column-3;
+    }
+    &__image {
+        vertical-align: top;
+        width: @column-3;
+        height: 255px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;  
+        background-image: url(/img/bg-main-reason-2.jpg);
+    }
+  }
+  &__reason-3,
+  &__reason-4,
+  &__reason-5 {
+    width: @column-3;
+  }
+  &__reason-3,
+  &__reason-4 {
+    border-bottom: 1px solid #d6d6d6;
+  }
+}     
+}
