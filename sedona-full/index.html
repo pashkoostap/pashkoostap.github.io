@@ -181,16 +181,14 @@
                 <fieldset>
                   <label for="adult" class="label__adult">Взрозлые:</label>
                   <button class="adult__less">-</button>
-                  <input type="text" class="counter-adult" id="adult" placeholder="2" value="2" name="adult">
+                  <input type="text" class="counter-adult" id="adult" placeholder="2" value="2" name="adult" pattern="[0-9]{3}" readonly>
                   <button class="adult__more">+</button>
                   
                   <label for="child" class="label__child">Дети:</label>
                   <button class="child__less">-</button>
-                  <input type="text" class="counter-child" id="child" placeholder="2" value="2" name="child">
+                  <input type="text" class="counter-child" id="child" placeholder="2" value="0" name="child" pattern="[0-9]{3}" readonly>
                   <button class="child__more">+</button>
                 </fieldset>
-                
-                
                 
                 <input type="submit" name="" id="" value="Найти" class="btn">
               </form>

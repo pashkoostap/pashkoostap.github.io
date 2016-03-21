@@ -327,6 +327,70 @@
     border-bottom: 1px solid #d6d6d6;
   }
 }
+.main-footer {
+  font-size: 0;
+  padding: 36px 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+.main-footer__hashtag {
+  display: inline-block;
+  width: 33.33333333%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 21px;
+  font-weight: bold;
+}
+.main-footer__social {
+  display: inline-block;
+  width: 33.33333333%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+}
+.main-footer__social__social-btn {
+  list-style: none;
+  font-size: 0;
+}
+.main-footer__social__social-btn li {
+  display: inline-block;
+  margin-right: 6px;
+}
+.main-footer__social__social-btn li:last-child {
+  margin-right: 0;
+}
+.main-footer__social__social-btn a {
+  text-decoration: none;
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  background-image: url(../img/icon/6-tw.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-footer__social__social-btn a:hover {
+  background-color: #669ec0;
+}
+.main-footer__social__social-btn a:active {
+  background-color: #5496bd;
+}
+.main-footer__social__social-btn li:nth-child(2) a {
+  background-image: url(../img/icon/7-fb.png);
+}
+.main-footer__social__social-btn li:nth-child(3) a {
+  background-image: url(../img/icon/8-gp.png);
+}
+.main-footer__about {
+  display: inline-block;
+  width: 33.33333333%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 14px;
+}
 .main-header {
   background-color: #ffffff;
   min-height: 56px;
@@ -466,6 +530,7 @@ body {
 }
 .page-wrap {
   margin: 0 auto;
+  position: relative;
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 1200px) {
@@ -489,7 +554,7 @@ body {
   font-size: 0;
 }
 .search .btn {
-  font-size: 18px;
+  font-size: 21px;
   color: #ffffff;
   vertical-align: top;
   text-align: center;
@@ -527,7 +592,11 @@ body {
 }
 .search__map {
   position: relative;
-  min-width: 600px;
+}
+.search__map iframe {
+  width: 100%;
+  min-height: 480px;
+  font-size: 0;
 }
 .search__map .search__container {
   display: none;

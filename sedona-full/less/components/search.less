@@ -1,7 +1,7 @@
 .search {
   font-size: 0;
   .btn {
-    font-size: @font-size--header--small;
+    font-size: @font-size--header;
     color: @white;
     vertical-align: top;
     text-align: center;
@@ -40,7 +40,12 @@
   }
   &__map {
     position: relative;
-    min-width: 600px;
+      
+    iframe {
+      width: 100%;
+      min-height: 480px;
+      font-size: 0;
+    }
     .search__container {
       display: none;
       position: absolute;
