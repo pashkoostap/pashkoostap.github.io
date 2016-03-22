@@ -1,6 +1,5 @@
 .main-footer {
   font-size: 0;
-  //margin: 0;
   padding: 36px 0;
   width: @column-3;
   background-color: @white;
@@ -24,6 +23,7 @@
     &__social-btn {
       list-style: none;
       font-size: 0;
+      padding: 0;
       li {
         display: inline-block;
         margin-right: 6px;
@@ -52,6 +52,7 @@
         a {
           background-image: url(../img/icon/7-fb.png);
         }
+        
       }
       li:nth-child(3) {
         a {
@@ -61,7 +62,50 @@
     }
   }
   &__about {
+    font-size: 0;
     .mixing-footer ();
-    font-size: @font-size;
+    span {
+      display: inline-block;
+      font-size: @font-size;
+    }
+    .mixing-footer-about () {
+      vertical-align: middle;
+      display: inline-block;
+      width: 30px;
+      height: 36px;
+      margin: 0 10px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+    .academy-1 {
+      .mixing-footer-about ();
+      background-image: url(../img/icon/9-academy.png);
+    }
+    .academy-2 {
+      .mixing-footer-about ();
+      background-image: url(../img/icon/10-academy-2.png);
+      margin-right: 0px;
+    }
   }
+}
+
+@media(max-width: 767px) {
+  .main-footer {
+  padding: 0;
+    .mixing-footer () {
+      width: @column-3;
+    }
+    &__hashtag {
+      .mixing-footer ();
+      padding: 26px 0; 
+    }
+    &__social {
+      padding: 15px 0;
+      .mixing-footer ();
+    }
+    &__about {
+      .mixing-footer ();
+      padding: 21px 0;
+    }
+  }  
 }

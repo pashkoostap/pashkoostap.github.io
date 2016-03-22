@@ -52,7 +52,7 @@
   margin-top: 34px;
   margin-bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .intro {
     min-height: 615px;
   }
@@ -232,7 +232,7 @@
     margin-bottom: 15px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-content .reason__header {
     margin: 0 auto;
     width: 280px;
@@ -353,6 +353,7 @@
 .main-footer__social__social-btn {
   list-style: none;
   font-size: 0;
+  padding: 0;
 }
 .main-footer__social__social-btn li {
   display: inline-block;
@@ -384,12 +385,54 @@
   background-image: url(../img/icon/8-gp.png);
 }
 .main-footer__about {
+  font-size: 0;
   display: inline-block;
   width: 33.33333333%;
   text-align: center;
   vertical-align: middle;
   margin: 0;
+}
+.main-footer__about span {
+  display: inline-block;
   font-size: 14px;
+}
+.main-footer__about .academy-1 {
+  vertical-align: middle;
+  display: inline-block;
+  width: 30px;
+  height: 36px;
+  margin: 0 10px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon/9-academy.png);
+}
+.main-footer__about .academy-2 {
+  vertical-align: middle;
+  display: inline-block;
+  width: 30px;
+  height: 36px;
+  margin: 0 10px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: url(../img/icon/10-academy-2.png);
+  margin-right: 0px;
+}
+@media (max-width: 767px) {
+  .main-footer {
+    padding: 0;
+  }
+  .main-footer__hashtag {
+    width: 100%;
+    padding: 26px 0;
+  }
+  .main-footer__social {
+    padding: 15px 0;
+    width: 100%;
+  }
+  .main-footer__about {
+    width: 100%;
+    padding: 21px 0;
+  }
 }
 .main-header {
   background-color: #ffffff;
@@ -441,7 +484,7 @@
 .main-nav .main-nav__list--active-item a:active {
   opacity: 0.3;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-nav {
     position: relative;
   }
@@ -544,9 +587,9 @@ body {
     min-width: 768px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .page-wrap {
-    max-width: 768px;
+    max-width: 767px;
     min-width: 320px;
   }
 }
@@ -592,6 +635,10 @@ body {
 }
 .search__map {
   position: relative;
+  height: 480px;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
 }
 .search__map iframe {
   width: 100%;
@@ -620,6 +667,12 @@ body {
   border: 0;
   margin: 0;
   margin-bottom: 30px;
+}
+.search__map .search__container__form fieldset.adult,
+.search__map .search__container__form fieldset.child {
+  font-size: 0;
+  width: 225px;
+  display: inline-block;
 }
 .search__map .search__container__form input,
 .search__map .search__container__form button {
@@ -673,4 +726,70 @@ body {
 }
 .search__map .search__container__show {
   display: block;
+}
+@media (max-width: 767px) {
+  .search .btn {
+    font-size: 18px;
+  }
+  .search__block {
+    padding-top: 30px;
+  }
+  .search__block__header {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  .search__block__text {
+    width: 280px;
+    margin-bottom: 30px;
+  }
+  .search__block__btn {
+    width: 100%;
+  }
+  .search__map {
+    position: static;
+    height: 790px;
+  }
+  .search__map iframe {
+    min-height: 360px;
+  }
+  .search__map .search__container {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    padding: 25px 20px 37px 20px;
+    width: 280px;
+  }
+  .search__map .search__container__form fieldset {
+    margin-bottom: 20px;
+  }
+  .search__map .search__container__form fieldset.adult,
+  .search__map .search__container__form fieldset.child {
+    width: 115px;
+    margin-bottom: 20px;
+  }
+  .search__map .search__container__form fieldset.adult label,
+  .search__map .search__container__form fieldset.child label {
+    width: 90px;
+  }
+  .search__map .search__container__form fieldset.adult {
+    margin-right: 50px;
+  }
+  .search__map .search__container__form label {
+    width: 265px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+  }
+  .search__map .search__container__form .label__child {
+    padding-left: 15px;
+    width: 115px;
+  }
+  .search__map .search__container__form .label__adult {
+    padding-left: 15px;
+    width: 115px;
+  }
+  .search__map .search__container__form input[type="date"] {
+    padding: 10px 15px;
+    width: 250px;
+  }
 }
