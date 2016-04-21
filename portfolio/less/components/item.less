@@ -11,28 +11,29 @@
   .description-block {
     padding: 10px;
     .heading {
-      font-size: 20px;
+      font-size: @font-size-heading;
       font-weight: bold;
       margin: 0;
       margin-bottom: 20px;
       text-transform: uppercase;
-      color: #000000;
       vertical-align: top;
       text-align: left;
     }
     .description-text {
-      color: #000000;
-      font-size: 14px;
       margin-bottom: 20px;
+      font-size: @font-size;
+      color: @black-text;
     }
     .technologies {
       text-align: left;
+      font-size: 0;
       span {
+        font-size: 16px;
         display: inline-block;
         margin-bottom: 20px;
-        margin-right: 10px;
-        background-color: #0e49b9;
-        color: #ffffff;
+        margin-right: 20px;
+        background-color: @grey;
+        color: @white;
         vertical-align: middle;
         padding: 10px;
       }
@@ -41,18 +42,17 @@
       margin: 0;
       .btn-link {
         text-transform: uppercase;
-        border: 2px solid #0e49b9;
-        background-color: #ffffff;
-        color: #0e49b9;
+        border: 2px solid @grey;
+        background-color: @white;
+        color: @grey;
         text-decoration: none;
         font-weight: bold;
         padding: 12px 10px;
       }
       .btn-link:hover,      
       .btn-link:active {
-        background-color: #0e49b9;
-        color: #ffffff;
-        color: #ffffff;
+        background-color: @grey;
+        color: @white;
       }
     }
   }

@@ -42,9 +42,10 @@ module.exports = function(grunt) {
           optimizationLevel: 3        
         },
         files: {                         
-        'img/barbershop.png': 'src/barbershop.png',      'img/level-builders.png': 'src/level-builders.png',
-        'img/royalweb.club.png': 'src/royalweb.club.png',
-        'img/sedona.png': 'src/sedona.png'
+        'img/barbershop.jpg': 'src/barbershop.jpg',
+        'img/level-builders.jpg': 'src/level-builders.jpg',
+        'img/royalweb.club.jpg': 'src/royalweb.club.jpg',
+        'img/sedona.jpg': 'src/sedona.jpg'
         }
       }
     },

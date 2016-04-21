@@ -1446,9 +1446,31 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: PT Sans, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
-	color: #0e49b9;
+	color: #323232;
+}
+
+.main-header {
+	min-height: 100px;
+	min-width: 320px;
+	border-top: 5px solid #606560;
+	border-bottom: 5px solid #606560;
+	margin: 0;
+	padding: 20px 10px;
+	font-size: 0;
+	margin-bottom: 30px;
+}
+
+.main-header .about {
+	min-height: 100%;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #323232;
+	text-transform: uppercase;
+	vertical-align: middle;
+	text-align: left;
 }
 
 .item-block {
@@ -1473,26 +1495,27 @@ body {
 	margin: 0;
 	margin-bottom: 20px;
 	text-transform: uppercase;
-	color: #000000;
 	vertical-align: top;
 	text-align: left;
 }
 
 .item-block .description-block .description-text {
-	color: #000000;
-	font-size: 14px;
 	margin-bottom: 20px;
+	font-size: 16px;
+	color: #323232;
 }
 
 .item-block .description-block .technologies {
 	text-align: left;
+	font-size: 0;
 }
 
 .item-block .description-block .technologies span {
+	font-size: 16px;
 	display: inline-block;
 	margin-bottom: 20px;
-	margin-right: 10px;
-	background-color: #0e49b9;
+	margin-right: 20px;
+	background-color: #606560;
 	color: #ffffff;
 	vertical-align: middle;
 	padding: 10px;
@@ -1504,9 +1527,9 @@ body {
 
 .item-block .description-block .links .btn-link {
 	text-transform: uppercase;
-	border: 2px solid #0e49b9;
+	border: 2px solid #606560;
 	background-color: #ffffff;
-	color: #0e49b9;
+	color: #606560;
 	text-decoration: none;
 	font-weight: bold;
 	padding: 12px 10px;
@@ -1514,7 +1537,7 @@ body {
 
 .item-block .description-block .links .btn-link:hover,
 .item-block .description-block .links .btn-link:active {
-	background-color: #0e49b9;
+	background-color: #606560;
 	color: #ffffff;
 }
 
@@ -1523,6 +1546,45 @@ hr {
 	width: 50%;
 	margin-top: 0;
 	margin-bottom: 30px;
+}
+
+.main-footer {
+	min-height: 100px;
+	min-width: 320px;
+	border-top: 5px solid #606560;
+	border-bottom: 5px solid #606560;
+	margin: 0;
+	padding: 10px;
+	font-size: 0;
+	text-align: center;
+}
+
+.main-footer .social {
+	min-height: 100%;
+	padding: 10px;
+}
+
+.main-footer .social .social-btn {
+	display: inline-block;
+	font-size: 20px;
+	color: #606560;
+	vertical-align: middle;
+	padding: 10px;
+	border-radius: 0;
+	margin-right: 20px;
+	width: 50px;
+	border: 2px solid #606560;
+}
+
+.main-footer .social .social-btn:last-child {
+	margin-right: 0;
+}
+
+.main-footer .social .social-btn:hover,
+.main-footer .social .social-btn:active {
+	background: #606560;
+	color: #ffffff;
+	border-radius: 0;
 }
 
 @media (min-width: 768px) {

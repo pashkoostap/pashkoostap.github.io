@@ -1,0 +1,36 @@
+.main-footer {
+  min-height: 100px;
+  min-width: 320px;
+  border-top: 5px solid @grey;
+  border-bottom: 5px solid @grey;
+  margin: 0;
+  padding: 10px;
+  font-size: 0;
+  text-align: center;
+  
+  .social {
+    min-height: 100%;
+    padding: 10px;
+    .social-btn {
+      display: inline-block;
+      font-size: @font-size-heading;
+      color: @grey;
+      vertical-align: middle;
+      padding: 10px;
+      border-radius: 0;
+      margin-right: 20px;
+      width: 50px;
+      border: 2px solid @grey;
+    }
+    .social-btn:last-child {
+      margin-right: 0;
+    }
+    .social-btn:hover,
+    .social-btn:active {
+      background: @grey;
+      color: @white;
+      border-radius: 0;      
+    }
+  }
+}
+
