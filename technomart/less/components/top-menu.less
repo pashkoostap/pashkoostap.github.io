@@ -1,0 +1,140 @@
+.top-menu {
+  padding: 45px 0;
+  background: @white-top;
+  font-size: 0;
+  &-description {
+    float: left;
+    margin: 0;
+    padding: 0px 40px;
+    width: 240px;
+    color: @red;
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+  }
+  
+  &-contacts {
+    float: left;
+    width: 220px;
+    .phone-wrap {
+      float: left;
+      font-size: 0px;
+      color: @red;
+      border: 3px solid @white;
+      width: 214px;
+      .fa-phone {
+        font-size: 18px;
+        width: 40px;
+        color: @grey;
+        padding-top: 12px;
+        padding-bottom: 8px;
+      }
+      .phone {
+        color: @red;
+        float: left;
+        width: 174px;
+        margin: 0;
+        padding: 10px 0;
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+    
+    .address {
+      float: left;
+      width: 220px;
+      color: @blue;
+      font-size: 14px;
+      text-align: center;
+      padding-top: 5px;
+    }
+  }
+  &-login-block {
+    float: right;
+    width: 280px;
+    height: 44px;
+    
+    .sign-in-wrap {
+      float: left;
+      width: 120px;
+      background: @white;
+      margin-right: 10px;
+      .fa-sign-in {
+        color: @grey-light;
+        width: 50px;
+        padding: 13px 0;
+      }
+      .fa-sign-in-hover {
+        color: @blue;
+      }
+      .sign-in {
+        color: @black;
+        float: left;
+        text-align: left;
+        width: 70px;
+        padding: 13px 0;
+        font-size: 18px;
+        line-height: 18px;
+      }
+      .sign-in:hover {
+        color: @red;
+      }
+      .sign-in:active {
+        color: @black-opacity-30;
+      }
+    }
+    .register {
+      float: right;
+      color: @black;
+      background: @white;
+      width: 150px;
+      padding: 13px 0;
+      font-size: 18px;
+      line-height: 18px;
+    }
+    .register:hover {
+      color: @red;
+      }
+    .register:active {
+      color: @black-opacity-30;
+    }
+  }
+  
+  &-navigation {
+    display: block;
+    float: left;
+    width: 940px;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 0;
+    &-list {
+      margin: 0;
+      padding: 0;
+      width: 940px;
+      background: @blue;
+      border-bottom: 5px solid @blue-hover;
+      list-style: none;
+      float: left;
+      li {
+        float: left;
+        a {
+          float: left;
+          font-size: 17px;
+          line-height: 17px;
+          background: @blue;
+          padding: 19px 24px;
+          color: @white;
+          text-decoration: none;
+          color: @white;
+        }
+        a:hover {
+          background: @blue-hover;
+        }
+        a:active {
+          background: @blue-click;
+          color: @white-opacity-50;
+        }
+      }
+    }
+  }
+}

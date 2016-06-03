@@ -69,19 +69,6 @@ body {
 .main-header .search-form-wrap .search-form {
   font-size: 0;
   margin: 0;
-  /*      .search-field:-webkit-input-placeholder {
-        color: @white; 
-      }
-      .search-field:-moz-placeholder {
-        color: @white; 
-      }
-      .search-field:-moz-placeholder {
-        color: @white; 
-      }
-      .search-field:-ms-input-placeholder {
-        color: @white; 
-      }   
-*/
 }
 .main-header .search-form-wrap .search-form .search-field {
   float: left;
@@ -98,6 +85,18 @@ body {
 }
 .main-header .search-form-wrap .search-form .search-field:focus {
   background: #ffffff;
+}
+.main-header .search-form-wrap .search-form .search-field::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.main-header .search-form-wrap .search-form .search-field::-moz-placeholder {
+  color: #ffffff;
+}
+.main-header .search-form-wrap .search-form .search-field::-moz-placeholder {
+  color: #ffffff;
+}
+.main-header .search-form-wrap .search-form .search-field::-ms-input-placeholder {
+  color: #ffffff;
 }
 .main-header .bookmark-wrap {
   width: 150px;
@@ -176,4 +175,139 @@ body {
 .main-header .order:active {
   color: rgba(255, 255, 255, 0.5);
   background: #518534;
+}
+.top-menu {
+  padding: 45px 0;
+  background: #f1f5f7;
+  font-size: 0;
+}
+.top-menu-description {
+  float: left;
+  margin: 0;
+  padding: 0px 40px;
+  width: 240px;
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+.top-menu-contacts {
+  float: left;
+  width: 220px;
+}
+.top-menu-contacts .phone-wrap {
+  float: left;
+  font-size: 0px;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+  width: 214px;
+}
+.top-menu-contacts .phone-wrap .fa-phone {
+  font-size: 18px;
+  width: 40px;
+  color: #b7bfc8;
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+.top-menu-contacts .phone-wrap .phone {
+  color: #ee3643;
+  float: left;
+  width: 174px;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 18px;
+}
+.top-menu-contacts .address {
+  float: left;
+  width: 220px;
+  color: #32425c;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 5px;
+}
+.top-menu-login-block {
+  float: right;
+  width: 280px;
+  height: 44px;
+}
+.top-menu-login-block .sign-in-wrap {
+  float: left;
+  width: 120px;
+  background: #ffffff;
+  margin-right: 10px;
+}
+.top-menu-login-block .sign-in-wrap .fa-sign-in {
+  color: #c5c5c5;
+  width: 50px;
+  padding: 13px 0;
+}
+.top-menu-login-block .sign-in-wrap .fa-sign-in-hover {
+  color: #32425c;
+}
+.top-menu-login-block .sign-in-wrap .sign-in {
+  color: #000000;
+  float: left;
+  text-align: left;
+  width: 70px;
+  padding: 13px 0;
+  font-size: 18px;
+  line-height: 18px;
+}
+.top-menu-login-block .sign-in-wrap .sign-in:hover {
+  color: #ee3643;
+}
+.top-menu-login-block .sign-in-wrap .sign-in:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.top-menu-login-block .register {
+  float: right;
+  color: #000000;
+  background: #ffffff;
+  width: 150px;
+  padding: 13px 0;
+  font-size: 18px;
+  line-height: 18px;
+}
+.top-menu-login-block .register:hover {
+  color: #ee3643;
+}
+.top-menu-login-block .register:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.top-menu-navigation {
+  display: block;
+  float: left;
+  width: 940px;
+  height: 60px;
+  margin-top: 50px;
+  font-size: 0;
+}
+.top-menu-navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 940px;
+  background: #32425c;
+  border-bottom: 5px solid #293449;
+  list-style: none;
+  float: left;
+}
+.top-menu-navigation-list li {
+  float: left;
+}
+.top-menu-navigation-list li a {
+  float: left;
+  font-size: 17px;
+  line-height: 17px;
+  background: #32425c;
+  padding: 19px 24px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.top-menu-navigation-list li a:hover {
+  background: #293449;
+}
+.top-menu-navigation-list li a:active {
+  background: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
 }

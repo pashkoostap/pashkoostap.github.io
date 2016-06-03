@@ -4,6 +4,8 @@ var shoppingIcon = document.querySelector('.fa-shopping-cart');
 var shoppingkActive = document.querySelector('.shopping-cart');
 var searchIcon = document.querySelector('.fa-search');
 var inputSearchActive = document.querySelector('.search-field');
+var signInIcon = document.querySelector('.fa-sign-in');
+var registerActive = document.querySelector('.sign-in');
 
 inputSearchActive.addEventListener('mouseover', function(event) {
   searchIcon.classList.add('fa-search-hover');
@@ -64,4 +66,23 @@ shoppingkActive.addEventListener('focus', function(event) {
 shoppingkActive.addEventListener('blur', function(event) {
   event.preventDefault();
   shoppingIcon.classList.remove('fa-shopping-active');
+});
+
+
+registerActive.addEventListener('mouseover', function(event) {
+  signInIcon.classList.add('fa-sign-in-hover');
+});
+
+registerActive.addEventListener('mouseout', function(event) {
+  signInIcon.classList.remove('fa-sign-in-hover');
+});
+
+registerActive.addEventListener('focus', function(event) {
+  event.preventDefault();
+  signInIcon.classList.remove('fa-sign-in-hover');
+});
+
+registerActive.addEventListener('click', function(event) {
+  event.preventDefault();
+  signInIcon.classList.remove('fa-sign-in-hover');
 });
