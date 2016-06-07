@@ -35,30 +35,8 @@
     button:active {
       background-color: @black-opacity-30;
     }
-    .promo-badge {
-      color: @white;
-      position: absolute;
-      top: -28px;
-      right: -25px;
-      font-size: 16px;
-      font-style: normal;
-      text-align: center;
-      vertical-align: top;
-      line-height: 18px;
-      background-color: @red;
-      width: 85px;
-      padding: 5px 0px;
-      transform: rotate(45deg);
-      transform-origin: 0% 100%;
-    }
   }
     
-  .promo-product-slider {
-    width: 620px;
-    height: 270px;
-    float: left;
-    background: #ccc;
-  }
   .materials {
     background-color: @promo-yellow;
     background-image: url(../img/icon/promo-materials.png);
@@ -91,9 +69,92 @@
     background-image: url(../img/icon/promo-delivery.png);
     float: right;
   }
+  
+  .promo-product-slider {
+    font-size: 0;
+    width: 620px;
+    height: 270px;
+    float: left;
+    background: @black;
+    .slider-wrap {
+      position: relative;
+      height: 270px;
+      .fa {
+        position: absolute;
+        display: block;
+        
+        font-size: 44px;
+        line-height: 44px;
+        height: 44px;
+        width: 50px;
+        padding: 8px 0;
+        padding-left: 10px;
+        text-align: center;
+        color: @white-opacity-30;
+        top: 50%;
+        margin-top: -30px;
+        cursor: pointer;
+        z-index: 1000;
+      }
+      .fa:hover,
+      .fa:active {
+        color: @white;
+      }
+      .fa-angle-left {
+        left: 0px;
+      }
+      .fa-angle-right {
+        right: 0px;
+      }
+      .catalog-link {
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: @white;
+        padding: 10px;
+        width: 175px;
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        border-radius: 2px;
+        background-color: @red;
+        z-index: 1000;
+      }
+      .catalog-link:hover {
+        background-color: @red-hover;
+      }
+      .catalog-link:active {
+        background-color: @red-click;
+      }
+      .slide-page {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        .slide-header {
+          position: absolute;
+          top: 25px;
+          left: 25px;
+          margin: 0;
+          font-size: 30px;
+          line-height: 30px;
+          text-transform: uppercase;
+          color: @white;
+        }
+        .slide-description {
+          position: absolute;
+          top: 65px;
+          left: 25px;
+          margin: 0;
+          font-size: 18px;
+          line-height: 24px;
+          color: @white;
+        }
+      }
+      .slide-active {
+        z-index: 700;
+      }
+    }
+  }
 }
-
-//
-//
-//
-//

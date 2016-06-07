@@ -27,6 +27,22 @@ body {
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
 }
+.badge-new {
+  color: #ffffff;
+  position: absolute;
+  top: -28px;
+  right: -25px;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  vertical-align: top;
+  line-height: 18px;
+  background-color: #ee3643;
+  width: 85px;
+  padding: 5px 0px;
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+}
 .main-header {
   height: 42px;
   background-color: #293449;
@@ -350,28 +366,6 @@ body {
 .promo-block .promo-product button:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
-.promo-block .promo-product .promo-badge {
-  color: #ffffff;
-  position: absolute;
-  top: -28px;
-  right: -25px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: center;
-  vertical-align: top;
-  line-height: 18px;
-  background-color: #ee3643;
-  width: 85px;
-  padding: 5px 0px;
-  transform: rotate(45deg);
-  transform-origin: 0% 100%;
-}
-.promo-block .promo-product-slider {
-  width: 620px;
-  height: 270px;
-  float: left;
-  background: #ccc;
-}
 .promo-block .materials {
   background-color: #f6b22d;
   background-image: url(../img/icon/promo-materials.png);
@@ -403,4 +397,125 @@ body {
   background-color: #f6b22d;
   background-image: url(../img/icon/promo-delivery.png);
   float: right;
+}
+.promo-block .promo-product-slider {
+  font-size: 0;
+  width: 620px;
+  height: 270px;
+  float: left;
+  background: #000000;
+}
+.promo-block .promo-product-slider .slider-wrap {
+  position: relative;
+  height: 270px;
+}
+.promo-block .promo-product-slider .slider-wrap .fa {
+  position: absolute;
+  display: block;
+  font-size: 44px;
+  line-height: 44px;
+  height: 44px;
+  width: 50px;
+  padding: 8px 0;
+  padding-left: 10px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.promo-block .promo-product-slider .slider-wrap .fa:hover,
+.promo-block .promo-product-slider .slider-wrap .fa:active {
+  color: #ffffff;
+}
+.promo-block .promo-product-slider .slider-wrap .fa-angle-left {
+  left: 0px;
+}
+.promo-block .promo-product-slider .slider-wrap .fa-angle-right {
+  right: 0px;
+}
+.promo-block .promo-product-slider .slider-wrap .catalog-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px;
+  width: 175px;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  border-radius: 2px;
+  background-color: #ee3643;
+  z-index: 1000;
+}
+.promo-block .promo-product-slider .slider-wrap .catalog-link:hover {
+  background-color: #ca2c37;
+}
+.promo-block .promo-product-slider .slider-wrap .catalog-link:active {
+  background-color: #ba2732;
+}
+.promo-block .promo-product-slider .slider-wrap .slide-page {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+.promo-block .promo-product-slider .slider-wrap .slide-page .slide-header {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.promo-block .promo-product-slider .slider-wrap .slide-page .slide-description {
+  position: absolute;
+  top: 65px;
+  left: 25px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.promo-block .promo-product-slider .slider-wrap .slide-active {
+  z-index: 700;
+}
+.popular-block-header {
+  float: left;
+  font-size: 0px;
+  margin-bottom: 20px;
+  padding: 25px 30px;
+  width: 880px;
+  background-color: #f7f3ec;
+}
+.popular-block-header h3 {
+  font-size: 30px;
+  line-height: 38px;
+  vertical-align: middle;
+  margin: 0;
+  color: #32425c;
+  text-transform: uppercase;
+  float: left;
+}
+.popular-block-header .popular-btn {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px;
+  background-color: #ee3643;
+  color: #ffffff;
+  text-transform: uppercase;
+  vertical-align: top;
+  float: right;
+  width: 220px;
+  border-radius: 2px;
+}
+.popular-block-header .popular-btn:hover {
+  background-color: #ca2c37;
+}
+.popular-block-header .popular-btn:active {
+  background-color: #ba2732;
 }

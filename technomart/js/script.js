@@ -86,3 +86,52 @@ registerActive.addEventListener('click', function(event) {
   event.preventDefault();
   signInIcon.classList.remove('fa-sign-in-hover');
 });
+
+var sliderList = [];
+var sliderPages = 2;
+var sliderWrap = document.querySelector('.slider-wrap');
+var arrowLeft = sliderWrap.querySelector('.fa-angle-left');
+var arrowRight = sliderWrap.querySelector('.fa-angle-right');
+var currentSlide = sliderWrap.querySelector('.slide-active');
+
+for (var i = 0; i < sliderPages; i++) {
+  var sliderPage = '.slide-' + (i+1);
+  sliderList[i] = sliderWrap.querySelector(sliderPage);
+}
+
+arrowRight.addEventListener('click', function(event) {
+  var currentSlide = sliderWrap.querySelector('.slide-active');
+  for (var i = 0; i < (sliderList.length - 1); i++) {
+    if(currentSlide == sliderList[i]) {
+      var nextSlide = sliderList[i+1];
+    } else if (currentSlide == sliderList[sliderList.length - 1]){
+      var nextSlide = sliderList[0];
+    }
+  }
+  
+  currentSlide.classList.remove('slide-active');
+  nextSlide.classList.add('slide-active');
+});
+
+
+arrowLeft.addEventListener('click', function(event) {
+  var currentSlide = sliderWrap.querySelector('.slide-active');
+  for (var i = sliderPages; i > 0; i--) {
+    if(currentSlide == sliderList[i]) {
+      var prevSlide = sliderList[i-1];
+    } else if (currentSlide == sliderList[0]){
+      var prevSlide = sliderList[sliderList.length - 1];
+    }
+  }
+  
+  currentSlide.classList.remove('slide-active');
+  prevSlide.classList.add('slide-active');
+});
+
+
+     
+     
+     
+     
+     
+     
