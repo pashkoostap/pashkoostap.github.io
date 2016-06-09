@@ -128,10 +128,4 @@ arrowLeft.addEventListener('click', function(event) {
   prevSlide.classList.add('slide-active');
 });
 
-
-     
-     
-     
-     
-     
      

@@ -42,6 +42,7 @@ body {
   padding: 5px 0px;
   transform: rotate(45deg);
   transform-origin: 0% 100%;
+  z-index: 500;
 }
 .main-header {
   height: 42px;
@@ -518,4 +519,149 @@ body {
 }
 .popular-block-header .popular-btn:active {
   background-color: #ba2732;
+}
+.popular-block .popular-products {
+  float: left;
+  margin-bottom: 20px;
+}
+.popular-block .popular-products .popular-item {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  font-size: 0;
+  width: 218px;
+  min-height: 300px;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+.popular-block .popular-products .popular-item .item-image {
+  margin-bottom: 10px;
+}
+.popular-block .popular-products .popular-item .item-description {
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.popular-block .popular-products .popular-item .item-price-old {
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
+  color: #999999;
+  margin: 0;
+  margin-bottom: 10px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+.popular-block .popular-products .popular-item .item-price-new {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -70px;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
+  color: #ffffff;
+  background-color: #ee3643;
+  padding: 10px 20px;
+  width: 100px;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+.popular-block .popular-products .popular-item .item-price-new:after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 0px;
+  right: 0px;
+  border-left: 19px solid #ee3643;
+  border-right: none;
+  border-top: 19px solid #ffffff;
+  border-bottom: 19px solid #ffffff;
+}
+.popular-block .popular-products .popular-item .item-buy {
+  position: absolute;
+  z-index: 200;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 83px;
+  padding: 45px 0;
+  background-color: #ffffff;
+}
+.popular-block .popular-products .popular-item .item-buy .btn {
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  width: 135px;
+  height: 38px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.popular-block .popular-products .popular-item .item-buy .btn-buy {
+  color: #ffffff;
+  background-color: #63a63e;
+  border-bottom: 3px solid #367315;
+  margin-bottom: 7px;
+}
+.popular-block .popular-products .popular-item .item-buy .btn-buy:hover {
+  background-color: #5fbb2d;
+}
+.popular-block .popular-products .popular-item .item-buy .btn-buy:active {
+  background-color: #518534;
+  border-bottom: 3px solid #518534;
+}
+.popular-block .popular-products .popular-item .item-buy .btn-bookmark {
+  background-color: #ffffff;
+  color: #32425c;
+  border: 3px solid #63a63e;
+}
+.popular-block .popular-products .popular-item .item-buy .btn-bookmark:hover {
+  border: 3px solid #32425c;
+}
+.popular-block .popular-products .popular-item .item-buy .btn-bookmark:active {
+  color: rgba(50, 66, 92, 0.3);
+  border: 3px solid rgba(50, 66, 92, 0.3);
+}
+.popular-block .popular-products .popular-item .item-buy:hover {
+  opacity: 1;
+}
+.popular-block .popular-products .popular-item:nth-child(4n) {
+  margin-right: 0px;
+}
+.popular-block .popular-brands {
+  float: left;
+  font-size: 0;
+  margin-bottom: 65px;
+}
+.popular-block .popular-brands .brand {
+  float: left;
+  width: 218px;
+  min-height: 143px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+}
+.popular-block .popular-brands .brand:hover {
+  border: 1px solid #ffffff;
+  box-shadow: 0px 7px 35px 1px rgba(0, 0, 0, 0.5);
+}
+.popular-block .popular-brands .brand:active {
+  opacity: 0.5;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 7px 25px 1px rgba(0, 0, 0, 0.5);
+}
+.popular-block .popular-brands .brand:nth-child(4n) {
+  margin-right: 0px;
 }
