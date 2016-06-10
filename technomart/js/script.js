@@ -128,4 +128,48 @@ arrowLeft.addEventListener('click', function(event) {
   prevSlide.classList.add('slide-active');
 });
 
+var sliderNavigation = document.querySelector('.services-slider-navigation');
+var sliderNavigationList = [];
+var sliderNavigationPages = 3;
+var servicesSliderList = [];
+
+for (var i = 0; i < sliderNavigationPages; i++) {
+  var sliderNavigationPage = '.navigation-slide-' + (i+1);
+  sliderNavigationList[i] = sliderNavigation.querySelector(sliderNavigationPage);
+}
+
+for (var i = 0; i < sliderNavigationPages; i++) {
+  var sliderServicesPage = '.services-slide-' + (i+1);
+  servicesSliderList[i] = document.querySelector(sliderServicesPage);
+}
+
+sliderNavigationList[0].addEventListener('click', function(event) {
+  sliderNavigationList[0].classList.add('navigation-slide-active');
+  sliderNavigationList[1].classList.remove('navigation-slide-active');
+  sliderNavigationList[2].classList.remove('navigation-slide-active');
+  servicesSliderList[0].classList.add('services-slide-active');
+  servicesSliderList[1].classList.remove('services-slide-active');
+  servicesSliderList[2].classList.remove('services-slide-active');
+});
+
+sliderNavigationList[1].addEventListener('click', function(event) {
+  sliderNavigationList[1].classList.add('navigation-slide-active');
+  sliderNavigationList[0].classList.remove('navigation-slide-active');
+  sliderNavigationList[2].classList.remove('navigation-slide-active');
+  servicesSliderList[1].classList.add('services-slide-active');
+  servicesSliderList[0].classList.remove('services-slide-active');
+  servicesSliderList[2].classList.remove('services-slide-active');
+});
+
+sliderNavigationList[2].addEventListener('click', function(event) {
+  sliderNavigationList[2].classList.add('navigation-slide-active');
+  sliderNavigationList[0].classList.remove('navigation-slide-active');
+  sliderNavigationList[1].classList.remove('navigation-slide-active');
+  servicesSliderList[2].classList.add('services-slide-active');
+  servicesSliderList[0].classList.remove('services-slide-active');
+  servicesSliderList[1].classList.remove('services-slide-active');
+});
+
+
+
      

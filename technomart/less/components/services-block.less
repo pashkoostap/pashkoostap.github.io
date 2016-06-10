@@ -1,0 +1,108 @@
+.services-block {
+  padding-top: 65px;
+  //padding-bottom: 100px;
+  background-color: @light-blue;
+  font-size: 0;
+  .services-block-header {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 35px;
+    vertical-align: top;
+    color: @black;
+    text-transform: uppercase;
+  }
+  .services-block-description {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 65px;
+    color: @black;
+  }
+  
+  .services-block-slider-wrap {
+    float: left;
+    position: relative;
+    width: 940px;
+    min-height: 280px;
+    .services-slider-navigation {
+      float: left;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      width: 240px;
+      margin-right: 80px;
+      
+      .navigation-slide {
+        float: left;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 15px 20px;
+        color: @white;
+        width: 200px;
+        background-color: @blue;
+        cursor: pointer;
+      }
+      .navigation-slide:hover {
+        background-color: @blue-hover;
+      }
+      .navigation-slide-active {
+        color: @blue;
+        background-color: @white;
+      }
+      .navigation-slide-active:hover {
+        background-color: @white;
+      }
+    }
+    .services-slide {
+      position: absolute;
+      width: 620px;
+      min-height: 280px;
+      top: 0;
+      right: 0;
+      display: none;
+      background-color: @light-blue;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      .services-slide-header {
+        font-size: 24px;
+        line-height: 24px;
+        margin: 0;
+        margin-bottom: 35px;
+        vertical-align: top;
+        color: @blue;
+        text-transform: uppercase;
+      }
+      .services-slide-description {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0;
+        color: @black;
+        width: 350px;
+        margin-bottom: 25px;
+      }
+      .services-slide-btn {
+        background-color: @red;
+        color: @white;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px;
+        width: 175px;
+        border-radius: 2px;
+        text-transform: uppercase;
+      }
+    }
+    .services-slide-1 {
+      background-image: url(../img/services-slider-delivery.png);
+    }
+    .services-slide-2 {
+      background-image: url(../img/services-slider-guarantee.png);
+    }
+    .services-slide-3 {
+      background-image: url(../img/services-slider-credit.png);
+    }
+    .services-slide-active {
+      display: block;
+    }
+  }
+}

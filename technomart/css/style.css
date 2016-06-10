@@ -665,3 +665,108 @@ body {
 .popular-block .popular-brands .brand:nth-child(4n) {
   margin-right: 0px;
 }
+.services-block {
+  padding-top: 65px;
+  background-color: #f2f6f8;
+  font-size: 0;
+}
+.services-block .services-block-header {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 35px;
+  vertical-align: top;
+  color: #000000;
+  text-transform: uppercase;
+}
+.services-block .services-block-description {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 65px;
+  color: #000000;
+}
+.services-block .services-block-slider-wrap {
+  float: left;
+  position: relative;
+  width: 940px;
+  min-height: 280px;
+}
+.services-block .services-block-slider-wrap .services-slider-navigation {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 240px;
+  margin-right: 80px;
+}
+.services-block .services-block-slider-wrap .services-slider-navigation .navigation-slide {
+  float: left;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px 20px;
+  color: #ffffff;
+  width: 200px;
+  background-color: #32425c;
+  cursor: pointer;
+}
+.services-block .services-block-slider-wrap .services-slider-navigation .navigation-slide:hover {
+  background-color: #293449;
+}
+.services-block .services-block-slider-wrap .services-slider-navigation .navigation-slide-active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+.services-block .services-block-slider-wrap .services-slider-navigation .navigation-slide-active:hover {
+  background-color: #ffffff;
+}
+.services-block .services-block-slider-wrap .services-slide {
+  position: absolute;
+  width: 620px;
+  min-height: 280px;
+  top: 0;
+  right: 0;
+  display: none;
+  background-color: #f2f6f8;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.services-block .services-block-slider-wrap .services-slide .services-slide-header {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 35px;
+  vertical-align: top;
+  color: #32425c;
+  text-transform: uppercase;
+}
+.services-block .services-block-slider-wrap .services-slide .services-slide-description {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  color: #000000;
+  width: 350px;
+  margin-bottom: 25px;
+}
+.services-block .services-block-slider-wrap .services-slide .services-slide-btn {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px;
+  width: 175px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+.services-block .services-block-slider-wrap .services-slide-1 {
+  background-image: url(../img/services-slider-delivery.png);
+}
+.services-block .services-block-slider-wrap .services-slide-2 {
+  background-image: url(../img/services-slider-guarantee.png);
+}
+.services-block .services-block-slider-wrap .services-slide-3 {
+  background-image: url(../img/services-slider-credit.png);
+}
+.services-block .services-block-slider-wrap .services-slide-active {
+  display: block;
+}
